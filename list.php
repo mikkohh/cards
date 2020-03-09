@@ -1,4 +1,4 @@
-?php
+<?php
 session_start();
 if($_SESSION['username'] == 'username') {
  include "connect.php";
@@ -23,7 +23,7 @@ if($_SESSION['username'] == 'username') {
  echo "0 results";
  }
  print("</html>");
- mysqli_close();
+ mysqli_close($conn);
 } else {
  print("No access.");
 }
