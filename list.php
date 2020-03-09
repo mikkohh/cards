@@ -48,7 +48,7 @@ if($_SESSION['username'] == 'username') {
  print("<input type=\"submit\" name=\"submit\" value=\"Save\" >");
  print("</form>");
  print("</html>");
- mysqli_close($conn);
+ mysqli_close();
 } else {
  print("No access.");
 }
